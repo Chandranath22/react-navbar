@@ -3,6 +3,7 @@ import NavbarConfig from "./NavbarConfig";
 import styles from "./Navbar.module.css";
 
 import Searchbar from "../searchbar/Searchbar";
+import Button from "../button/Button";
 
 const Navbar = () => {
     const { button, logo } = NavbarConfig;
@@ -24,16 +25,17 @@ const Navbar = () => {
                     </h1>
                 </div>
             </div>
-            <Searchbar onClick={() => console.log("clicked")}/>
+            <Searchbar onClick={() => console.log("clicked")} />
             <div className={styles.buttonContainer}>
                 {button.map((item, index) => (
-                    <button
+                    <Button 
                         key={index}
-                        className={styles.button}
-                        onClick={item.onclick}
-                    >
-                        {item.name}
-                    </button>
+                        label={item.name}
+                        isImage={false}
+                        isImgLeft={true}
+                        styles={{background: "transparent", marginLeft: "1rem"}}
+                        onClick={() => console.log("clicked")}
+                    />
                 ))}
             </div>
         </nav>

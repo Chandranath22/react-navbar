@@ -1,6 +1,6 @@
 const SeachbarConfig = {
     searchbar: {
-        withImage: false,
+        withImage: true,
         imageSrc: "",
         isLeft: true
     }

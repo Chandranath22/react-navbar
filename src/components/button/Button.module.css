@@ -1,0 +1,68 @@
+.button {
+    border: none;
+    outline: none;
+    background: #2196f3;
+    color: #fff;
+    font-size: 1rem;
+    text-transform: uppercase;
+    height: 2rem;
+    width: 5rem;
+    overflow: hidden;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.buttonWithImageLeft {
+    background-color: #2196f3;
+    border: none;
+    outline: none;
+    min-width: 6.5rem;
+    height: 2rem;
+    overflow: hidden;
+    border-radius: 1rem;
+    color: #fff;
+    font-size: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.buttonWithImageRight {
+    background-color: #2196f3;
+    border: none;
+    outline: none;
+    min-width: 6.5rem;
+    height: 2rem;
+    overflow: hidden;
+    border-radius: 1rem;
+    color: #fff;
+    font-size: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.buttonWithImageLeft span {
+    height: 100%;
+    color: #fff;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    margin: 0 1rem;
+}
+
+.buttonWithImageRight span {
+    height: 100%;
+    color: #fff;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    margin: 0 1rem;
+}

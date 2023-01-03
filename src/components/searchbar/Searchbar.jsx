@@ -40,7 +40,7 @@ const Searchbar = (props) => {
                     </g>
                 </svg>
             }
-            <input type="search" onChange={props.onChange} />
+            <input type="search" onChange={(e) => props.onChange(e)} />
         </div>
     )
 };
