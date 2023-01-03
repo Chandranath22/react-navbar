@@ -6,7 +6,7 @@
     font-size: 1rem;
     text-transform: uppercase;
     height: 2rem;
-    width: 5rem;
+    min-width: 5rem;
     overflow: hidden;
     border-radius: 1rem;
     cursor: pointer;
@@ -58,7 +58,7 @@
     font-size: 1rem;
     display: flex;
     align-items: center;
-    margin: 0 1rem;
+    margin-right: 1rem;
 }
 
 .buttonWithImageRight span {
@@ -67,5 +67,5 @@
     font-size: 1rem;
     display: flex;
     align-items: center;
-    margin: 0 1rem;
+    margin-left: 1rem;
 }
