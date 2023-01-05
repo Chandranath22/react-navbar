@@ -46,4 +46,4 @@ Button.defaultProps = {
     alt: "alt",
     imgStyles: { width: "15px", height: "15px" },
     onClick: () => console.log("default")
-}
+};

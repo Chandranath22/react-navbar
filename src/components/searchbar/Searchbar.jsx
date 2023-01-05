@@ -1,20 +1,18 @@
 import React from "react";
 import styles from "./Searchbar.module.css";
-import SeachbarConfig from "./SearchbarConfig";
 
 const Searchbar = (props) => {
-    const { searchbar } = SeachbarConfig;
 
     return (
         <div className={styles.inputContainer}>
             {
-                searchbar.withImage && <svg
+                props.withImage && <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0,0,256,256"
                     width="20px"
                     height="20px"
                     fillRule="nonzero"
-                    className={searchbar.isLeft ? styles.seacrhIconLeft : styles.seacrhIconRight}
+                    className={props.isLeft ? styles.seacrhIconLeft : styles.seacrhIconRight}
                     onClick={props.onClick}
                 >
                     <g
@@ -46,3 +44,8 @@ const Searchbar = (props) => {
 };
 
 export default Searchbar;
+
+Searchbar.defaultProps = {
+    withImage: true,
+    isLeft: true
+}
